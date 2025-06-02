@@ -10,4 +10,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ credentials: true }));
 
+app.get("/", (req, res) => res.send("API WORKING very well"));
+
 app.listen(port, () => console.log(`Server started on PORT" ${port}`));
